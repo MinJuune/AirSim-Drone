@@ -138,16 +138,14 @@ YOLO(비전) + PointNet(LiDAR) 인코더로 멀티모달 특징을 추출해 Sta
 - 장애물 회피 1: https://youtu.be/wVIOIzFpuGw  
 - 장애물 회피 2: https://youtu.be/v0Tm_WT6zzE  
 - 장애물 회피 3: https://youtu.be/ugyE5vjUI-E  
-- 스크린샷: `img/test_img.png`
 
-![Demo screenshot](img/test_img.png)
+<br>
 
-## Troubleshooting
-- **AirSim 연결 실패**: UE `Play` 실행 여부, 포트(기본 41451) 및 센서 이름(`FrontCamera`, `LidarSensor1`) 확인.
-- **YOLO 가중치 경로 오류**: `models/yolo.py`의 절대경로를 실제 가중치 위치로 수정하거나 상대경로로 변경.
-- **센서 차원 불일치**: AirSim 이미지 해상도가 `CAMERA_WIDTH=640`, `CAMERA_HEIGHT=480`, 채널 4(RGBA)와 맞는지 확인. LiDAR 포인트 수는 부족 시 패딩, 초과 시 샘플링됨.
-- **PPO 모델 없음**: `weights/ppo.zip`이 없으면 테스트/추론 불가. 학습을 먼저 수행하거나 가중치를 다운로드.
-- **Matplotlib 팝업 문제**: 원격/헤드리스 환경이면 백엔드 설정 후 저장 방식으로 변경 필요.
+<p align="center">
+  <img src="img/test_img.png" width="800"/>
+</p>
+
+
 
 ## License / Acknowledgements
 - Unreal Engine 4.27, Microsoft AirSim, Ultralytics YOLO, Stable-Baselines3, PyTorch/torchvision, OpenCV, Gym 등 외부 소프트웨어에 기반.
