@@ -1,0 +1,11 @@
+airsim
+stable-baselines3
+torch
+torchvision
+gym==0.26.2
+numpy
+opencv-python
+keyboard
+matplotlib
+ultralytics
+
