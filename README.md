@@ -138,7 +138,7 @@ YOLO(비전) + PointNet(LiDAR) 인코더로 멀티모달 특징을 추출해 Sta
 - 장애물 회피 1: https://youtu.be/wVIOIzFpuGw  
 - 장애물 회피 2: https://youtu.be/v0Tm_WT6zzE  
 - 장애물 회피 3: https://youtu.be/ugyE5vjUI-E  
-- 레포 내 이미지가 있다면 스크린샷을 추가로 삽입해도 좋습니다.
+- 레포 내 이미지가 있다면 스크린샷을 함께 배치할 수 있습니다.
 
 ## Troubleshooting
 - **AirSim 연결 실패**: UE `Play` 실행 여부, 포트(기본 41451) 및 센서 이름(`FrontCamera`, `LidarSensor1`) 확인.
