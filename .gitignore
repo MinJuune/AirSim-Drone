@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# Logs & outputs
+logs/
+checkpoints/
+runs/
+
+# Weights
+weights/*.pth
+weights/*.pt
+
+# OS
+.DS_Store
+Thumbs.db
+
+weights/
+dataset/
+__pycache__/
+

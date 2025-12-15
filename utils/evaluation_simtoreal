@@ -1,0 +1,24 @@
+import numpy as np
+
+# 1. 현실 환경 성공률 (Real-World Success Rate)
+def compute_real_success_rate(success_count: int, total_trials: int) -> float:
+    if total_trials == 0:
+        return 0.0
+    return (success_count / total_trials) * 100
+
+# 2. 현실 환경 정확도 (Real-World Accuracy)
+def compute_real_goal_error(final_positions: list[np.ndarray], goal_position: np.ndarray) -> float:
+    if len(final_positions) == 0:
+        return 0.0
+    errors = [np.linalg.norm(p - goal_position) for p in final_positions]
+    return float(np.mean(errors))
+
+# 3. 성능 감소폭 (Sim-to-Real Performance Drop)
+def compute_performance_drop(success_rate_sim: float, success_rate_real: float) -> float:
+    if success_rate_sim == 0:
+        return 0.0
+    return ((success_rate_sim - success_rate_real) / success_rate_sim) * 100
+
+# 4. 조종자 개입 횟수 (Human Intervention Count)
+def compute_human_intervention_count(intervention_flags: list[int]) -> int:
+    return int(np.sum(intervention_flags))
