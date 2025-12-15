@@ -11,7 +11,7 @@ YOLO(비전) + PointNet(LiDAR) 인코더로 멀티모달 특징을 추출해 Sta
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
    ```
-4) **필수 패키지 설치** (코드 import 기준 requirements 예시)
+4) **필수 패키지 설치** 
    ```text
    airsim
    stable-baselines3
@@ -130,7 +130,7 @@ YOLO(비전) + PointNet(LiDAR) 인코더로 멀티모달 특징을 추출해 Sta
   - `weights/global_feature_extractor.pth` (PointNet)
   - YOLO 가중치(`models/yolo.py`의 `model_path`, 환경에 맞게 수정)
 - 배치 위치: `weights/` 폴더. 경로가 코드와 일치해야 로드됨.
-- `.gitignore` 예시(권장): `__pycache__/`, `*.zip`, `*.pth`, `*.pt`, `weights/`, `dataset/`, `.venv/`, `logs/`, `*.png`, `*.jpg` (필요에 따라 조정).
+
 
 ## Demo (Video)
 - 목표 추적: https://youtu.be/EeKbyxev2yI  
@@ -138,7 +138,9 @@ YOLO(비전) + PointNet(LiDAR) 인코더로 멀티모달 특징을 추출해 Sta
 - 장애물 회피 1: https://youtu.be/wVIOIzFpuGw  
 - 장애물 회피 2: https://youtu.be/v0Tm_WT6zzE  
 - 장애물 회피 3: https://youtu.be/ugyE5vjUI-E  
-- 레포 내 이미지가 있다면 스크린샷을 함께 배치할 수 있습니다.
+- 스크린샷: `img/test_img.png`
+
+![Demo screenshot](img/test_img.png)
 
 ## Troubleshooting
 - **AirSim 연결 실패**: UE `Play` 실행 여부, 포트(기본 41451) 및 센서 이름(`FrontCamera`, `LidarSensor1`) 확인.
